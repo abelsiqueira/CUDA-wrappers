@@ -54,7 +54,6 @@ jobs:
           echo "$HOME/.sonar/build-wrapper-linux-x86" >> $GITHUB_PATH
       - name: Debug
         run: |
-          nvidia-smi
           nvcc -V
       - name: Build without Sonar first to see what happens
         run: |
